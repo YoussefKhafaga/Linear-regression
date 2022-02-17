@@ -15,6 +15,7 @@ if __name__ == '__main__':
     data = read_data()
     x = data.iloc[:, :-1].values
     y = data.iloc[:, 1].values
+    print(x,y)
 
     #splitting 20% for testing and 80% for training
     x_train, x_test, y_train, y_test = model_selection.train_test_split(x, y, test_size=0.2, train_size=0.8,
